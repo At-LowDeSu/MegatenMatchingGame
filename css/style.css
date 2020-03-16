@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+.header {
+  background-color: black;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: red 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-window {
+  background-color: lightgray;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  border-bottom: red solid 3px;
+  display: flex;
+}
+
+#megami-title {
+  color: red;
+}
+
+.game-zone {
+  background-color: transparent;
+  border: black 2px solid;
+  margin: 20px;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0px;
+  flex: 3;
+}
+
+.rule-container {
+  flex: 1;
+  padding: 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.right-container {
+  flex: 1;
+  color: red;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.game-zone .row {
+  display: flex;
+}
+
+.game-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-item {
+  padding: 10px 30px;
+}
+
+.game-item img {
+  border: red 3px solid;
+  height: 120px;
+  width: 120px;
+}
+.game-item img:hover {
+  border: blue 3px solid;
+  height: 120px;
+  width: 120px;
+}
+.game-item-selected img {
+  border: purple 3px solid;
+  height: 120px;
+  width: 120px;
+}
+
+.score-system {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.score-system #score {
+  font-size: 26px;
+}
+
+.score-system button {
+  border-radius: 5px;
+  border: red 1px solid;
+  padding: 5px;
+  margin-top: 20px;
+  height: 40%;
+  background: black;
+  color: red;
+}
+.score-system button:hover {
+  background: red;
+  color: blue;
+  border: blue 1px solid;
+}

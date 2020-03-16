@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megami Tensei Matching Game</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1><span id="megami-title">Megami Tensei</span> Matching Game</h1>
+    </div>
+    <div class="game-window">
+      <div class="rule-container">
+        <p>Rules: Mostly the same as normal memory/matching game.</p>
+        <p>
+          Unique Rule 1: You will only see the first item clicked unless
+          matched, to avoid abuse of mechanics.
+        </p>
+        <p>
+          Unique Rule 2: Your score will go up with each correct guess and down
+          with each incorrect guess.
+        </p>
+      </div>
+      <div class="game-zone">
+        <div class="special-container">
+          <div class="row">
+            <h2>Welcome to the Megami Tensei Matching Game</h2>
+          </div>
+
+          <div class="row" id="game-field">
+            <div class="game-row">
+              <div class="game-item 1">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 2">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 3">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 4">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+            </div>
+            <div class="game-row">
+              <div class="game-item 5">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 6">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 7">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 8">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+            </div>
+            <div class="game-row">
+              <div class="game-item 9">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 10">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 11">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 12">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+            </div>
+            <div class="game-row">
+              <div class="game-item 13">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 14">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 15">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+              <div class="game-item 16">
+                <img src="/img/atlus.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row score-system">
+            <h1 id="score">Score: 0</h1>
+            <button id="replay-button">Replay</button>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <h3 id="change-this-text">Click a box to play.</h3>
+        <h3 id="highscore">High Score: No recorded victories</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
