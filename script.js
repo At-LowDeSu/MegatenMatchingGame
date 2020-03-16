@@ -106,28 +106,28 @@ function initializeGame() {
 //Update the picture for clicked icons
 function updateItem(e) {
   if (e.className.includes('blackFrost')) {
-    e.firstElementChild.src = '/img/blackFrost.png';
+    e.firstElementChild.src = 'img/blackFrost.png';
   }
   if (e.className.includes('demifiend')) {
-    e.firstElementChild.src = '/img/demifiend.png';
+    e.firstElementChild.src = 'img/demifiend.png';
   }
   if (e.className.includes('flynn')) {
-    e.firstElementChild.src = '/img/flynn.png';
+    e.firstElementChild.src = 'img/flynn.png';
   }
   if (e.className.includes('itsuki')) {
-    e.firstElementChild.src = '/img/itsuki.png';
+    e.firstElementChild.src = 'img/itsuki.png';
   }
   if (e.className.includes('joker')) {
-    e.firstElementChild.src = '/img/joker.png';
+    e.firstElementChild.src = 'img/joker.png';
   }
   if (e.className.includes('kazuya')) {
-    e.firstElementChild.src = '/img/kazuya.png';
+    e.firstElementChild.src = 'img/kazuya.png';
   }
   if (e.className.includes('pyroJack')) {
-    e.firstElementChild.src = '/img/pyroJack.png';
+    e.firstElementChild.src = 'img/pyroJack.png';
   }
   if (e.className.includes('jackFrost')) {
-    e.firstElementChild.src = '/img/jackFrost.png';
+    e.firstElementChild.src = 'img/jackFrost.png';
   }
 }
 
@@ -193,8 +193,8 @@ function compareClicks(first, second) {
       score -= 1;
     }
     victoryText.innerText = "Don't give up! Try again.";
-    first.firstElementChild.src = '/img/atlus.png';
-    second.firstElementChild.src = '/img/atlus.png';
+    first.firstElementChild.src = 'img/atlus.png';
+    second.firstElementChild.src = 'img/atlus.png';
   }
   //This will use the data saved to compare the two clicks to see if they are the same. If they are, add to the score and change the status of both clicks to 'cleared' and if not remove the 'clicked' status without adding cleared.
 }
@@ -213,7 +213,7 @@ function gameOver() {
 //Replay game
 function replay() {
   tileOrder.forEach(e => {
-    e.firstElementChild.src = '/img/atlus.png';
+    e.firstElementChild.src = 'img/atlus.png';
     let temp = e.className.split(' ');
     e.className = temp[0] + ' ' + temp[1];
   });
